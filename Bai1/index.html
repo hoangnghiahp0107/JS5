@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Bai1</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  </head>
+  <body>
+        <div class="card-header bg-success text-center text-white">Quản lý tuyển sinh</div>
+      <form>
+        <input class="form-control" placeholder="Điểm chuẩn" id="X">
+        <input class="form-control" placeholder="Điểm môn thứ 1" id="a">
+        <input class="form-control" placeholder="Điểm môn thứ 2" id="b">
+        <input class="form-control" placeholder="Điểm môn thứ 3" id="c">
+        <select id="area"> 
+            <option value="X">Chọn khu vực</option>
+            <option value="A">A</option>
+            <option value="B">B</option>
+            <option value="C">C</option>
+        </select>
+        <select id="type">
+            <option value="0">Chọn đối tượng</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+        </select>
+      </form>
+      <br>
+      <button type="button" class="btn btn-success" id="calculate">Kết quả</button>
+      <div style="display: none" id="result-wrapper">
+        <br>
+        <p id="result" class="alert-success"></p>
+      <script src="index.js"></script>
+  </body>
+</html>

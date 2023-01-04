@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  </head>
+  <body>
+      <div class="card-header bg-success text-center text-white">Tính tiền cáp</div>
+      <form>
+        <br>
+        <select id="chonlua">
+            <option value="X">Chọn loại khách hàng</option>
+            <option value="A">Nhà Dân</option>
+            <option value="B">Doanh Nghiệp</option>
+        </select>
+        <br>
+        <br>
+        <input class="form-control" placeholder="Nhập mã khách hàng" id="customer">
+        <input class="form-control" placeholder="Số kênh cao cấp" id="channel">
+        <input class="form-control" placeholder="Số kết nối" id="connect">
+      </form>
+      <br>
+      <button class="btn btn-success" type="button" id="calculate">Tính tiền cáp</button>
+      <div style="display: none" id="result-wrapper">
+        <br>
+        <p id="result" class="alert-success"></p>
+      <script src="index.js"></script>
+     
+  </body>
+</html>
